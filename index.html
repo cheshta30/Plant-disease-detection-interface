@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Disease Detection</title>
+
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Times Roman New', sans-serif;
+        }
+
+        body {
+
+            color: white;
+            font-size: 1.125rem;
+        }
+
+       
+        .container {
+            height: 100%;
+            overflow-y: auto; 
+        }
+
+        video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            z-index: 1;
+        }
+
+        .logo {
+            margin: 10px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+        }
+
+        .navbutton {
+    margin: 0 10px;
+    background-color: rgba(163, 213, 109, 0.937); 
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: rgba(60, 128, 41, 0.851); 
+}
+
+
+        .navbutton:hover {
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+
+        header h1 {
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        .hero-box {
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            padding: 20px;
+            text-align: center; 
+        }
+
+        .hero-text {
+            max-width: 70%; 
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center; 
+            margin-top: 20px;
+        }
+
+        .card {
+            flex: 1;
+            margin: 0 10px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 10px;
+            text-align: center;
+            color: black;
+        }
+
+        .card h2 {
+            margin-top: 0;
+        }
+
+        .card p {
+            margin-bottom: 0;
+        }
+
+        
+        .card img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <video autoplay muted loop>
+        <source src="leaves.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="container">
+        <header>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="https://c1.klipartz.com/pngpicture/901/531/sticker-png-green-leaf-logo-natural-environment-environmental-protection-sustainability-organization-ecology-environmental-impact-assessment-corporate-social-responsibility.png" alt="Logo for Sustainify the Earth " height="50">
+                </a>
+            </div>
+            <nav>
+                <div class="navbutton">
+                    <a href="/test.html">DETECT DISEASE</a>
+                </div>
+                <div class="navbutton">
+                    <a href="ABOUT_US.html">ABOUT US</a>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div class="cards">
+                <div class="hero-box">
+                    <div class="hero-text">
+                        <h1>Plant Disease Detection</h1>
+                        <p>With real-time monitoring and analysis, we empower farmers to detect early signs of plant illnesses, enabling timely interventions to prevent crop damage and maximize yields. Partner with us to revolutionize your farming practices and ensure the health and productivity of your crops.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="cards">
+            <div class="card">
+                <h2>Early Detection</h2>
+                <img src="img1.webp" alt="Image for early detection" width="300" height="200">
+                <p>Identify plant diseases at an early stage to prevent widespread damage.</p>
+            </div>
+            <div class="card">
+                <h2>Real-time Monitoring</h2>
+                <img src="img2.jpg" alt="Image for real time monitoring" width="300" height="200">
+                <p>Monitor your crops in real-time to stay informed about their health status.</p>
+            </div>
+            <div class="card">
+                <h2>Expert Analysis</h2>
+                <img src="img3.jpg" alt="Image for Expert Analysis" width="300" height="200">
+                <p>Receive expert analysis and recommendations for disease management.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

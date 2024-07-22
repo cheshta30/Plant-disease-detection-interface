@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .video-content {
+            position: relative;
+            z-index: 1;
+            color: rgb(252, 252, 252);
+            text-align: center;
+            padding: 50px;
+            background-color: rgba(138, 182, 146, 0.799);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; /* Align content to the top */
+            align-items: center;
+        }
+
+        .footer {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .footer p {
+            font-size: 18px; /* Adjust the font size as needed */
+        }
+
+        .title {
+            color: rgba(18, 129, 8, 0.848);
+        }
+
+        .button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: rgb(164, 211, 130);
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .button:hover {
+            background-color: #95ac92d6;
+        }
+
+        @media screen and (max-width: 650px) {
+            .video-content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<video class="video-background" autoplay muted loop>
+    <source src="about_us.mp4" type="video/mp4">
+</video>
+
+<div class="video-content">
+    <header><h1 class="title">About Us - PROTECT YOUR PLANT!</h1></header> 
+    <footer class="footer">
+        <br>
+        <br>
+        <p>You are at the right stop to Protect Your Plant! Our advanced plant disease detection system utilizes state-of-the-art technology to identify and diagnose diseases in crops accurately. We are dedicated to safeguarding the health and productivity of crops through innovative plant disease detection solutions. Our team is committed to leveraging technology and expertise to address the challenges faced by farmers worldwide.</p>
+        <p>Our mission is to revolutionize agriculture by providing accurate and timely detection of plant diseases, empowering farmers to make informed decisions and protect their livelihoods. Through our efforts, we aim to enhance food security and contribute to a sustainable future for generations to come.</p>
+        <p>Join us in our journey to combat plant diseases, preserve crop yields, and promote environmental stewardship. Together, let's cultivate a world where crops thrive, and communities flourish in harmony with nature.</p>
+    </footer> 
+</div>
+
+</body>
+</html>
